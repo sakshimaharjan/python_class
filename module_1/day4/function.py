@@ -12,17 +12,16 @@ def check_prime(number):
     return prime
 
 number = int(input("Enter a number to be checked: "))    
-value_of_check_prime = check_prime(number)
-print(value_of_check_prime)
-
-if value_of_check_prime:
-    print("Prime number")
-
 def multiplicationtable(number):
     for i in range(1,11):
         print(f"{number} * {i} = {number*i}")
 
-multiplicationtable(number)
+if check_prime(number):
+    multiplicationtable(number)
+
+
+#generate multiplication table of prime number from 1 to 20.
+
 
 # #odd_even test
 # def check_odd_even(num):
