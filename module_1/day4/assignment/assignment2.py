@@ -8,12 +8,15 @@ def check_primenum(number):
     if(count == 2):
         prime = True    
     return prime
-
-def primemultiplicationtable():
+def multiplicationtable(number):
+    for i in range(1,11):
+        print(f"{number} * {i} = {number*i}")
+def main():
     for number in range(1,21):
         if check_primenum(number):
             print(f"\nMultiplication table of prime number {number}:\n")
-            for i in range(1,11):
-                print(f"{number} * {i} = {number*i}")
+            multiplicationtable(number)
 
-primemultiplicationtable()
+main()
+                
+# f(x)= x^2+5*x+2
